@@ -1,8 +1,10 @@
 def pal():
     print (" Insert a word or sentence")
     word= input()
-    word= word.replace( ' ', '')
-    word= word.replace( '.', '')
+    if ' ' in word:
+        word= word.replace( ' ', '')
+    if '.' in word:
+        word= word.replace( '.', '')
     print(word)
     forward = []
     backwards= []
