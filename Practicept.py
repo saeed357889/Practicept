@@ -1,4 +1,6 @@
-def pal(word):
+def pal():
+    print (" Insert a word or sentence")
+    word= input()
     word= word.replace( ' ', '')
     word= word.replace( '.', '')
     print(word)
@@ -15,5 +17,5 @@ def pal(word):
     else:
         print('It is not a palindrome!!')
         return False
-pal('fowwod samhouri')
+pal()
 
